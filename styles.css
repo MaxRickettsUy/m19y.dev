@@ -1,0 +1,82 @@
+.flex-grid {
+  display: flex;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-row .col {
+  padding: 10px;
+}
+.flex-grid .container {
+  flex: 1;
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col-sm {
+  flex-grow: 1;
+}
+
+.flex-grid-thirds .col-lg {
+  flex-grow: 1;
+}
+
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.container {
+  /* border: 1px solid black; */
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.fullHeight {
+  height: 100vh;
+}
+
+.scrollContainer {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid black
+}
+
+/* .postText {
+  color: black;
+} */
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: white;
+}
+
+body {
+  /* padding: 20px; */
+  margin: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: black;
+}
