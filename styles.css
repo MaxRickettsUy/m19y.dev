@@ -35,12 +35,29 @@
 
 .post {
   background-color: black;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
-.fullHeight {
-  height: 100vh;
+@media screen and (max-width: 40.5em) {
+  .post {
+  }
 }
+
+.inner {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 40.5em) {
+  .inner {
+    width: auto;    
+  }
+}
+
+
+/* .fullHeight {
+  height: 100vh;
+} */
 
 .scrollContainer {
   overflow-y: scroll;
