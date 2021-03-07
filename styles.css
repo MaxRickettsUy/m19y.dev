@@ -33,6 +33,15 @@
   padding: 20px;
 }
 
+@media screen and (max-width: 40.5em) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+}
+
+
 .post {
   background-color: black;
   /* border: 1px solid white; */
