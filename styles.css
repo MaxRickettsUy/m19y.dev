@@ -6,15 +6,18 @@
   flex-direction: row;
 }
 .flex-row .col {
-  padding: 10px;
+  padding: 10 10 10 10;
 }
+
 .flex-grid .container {
   flex: 1;
 }
+
 .flex-grid-thirds {
   display: flex;
   justify-content: space-between;
 }
+
 .flex-grid-thirds .col-sm {
   flex-grow: 1;
 }
@@ -83,11 +86,11 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid black
+  border: 1px solid black;
 }
 
-.nav {
-  padding-top: 20px;
+.logos {
+  padding-top: 10px;
 }
 
 /* .postText {
