@@ -93,9 +93,13 @@
   padding-top: 10px;
 }
 
-/* .postText {
-  color: black;
-} */
+.title-link {
+  font-size: 18px;
+}
+
+.post-text {
+  font-size: 18px;
+}
 
 a {
   text-decoration: none;
