@@ -101,6 +101,10 @@
   font-size: 18px;
 }
 
+.setup-section-link {
+  font-size: 20px;
+}
+
 a {
   text-decoration: none;
   color: #7399be;
@@ -108,6 +112,10 @@ a {
 
 p {
   color: white;
+}
+
+h1, h2 {
+  color: white
 }
 
 body {
