@@ -1,12 +1,40 @@
+a {
+  text-decoration: none;
+  color: #7399be;
+}
+
+p {
+  color: white;
+}
+
+h1, h2 {
+  color: white
+}
+
+body {
+  /* padding: 20px; */
+  margin: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #181717;
+}
+.avatar {
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.container {
+  /* border: 1px solid black; */
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .flex-grid {
   display: flex;
-}
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.flex-row .col {
-  padding: 10 10 10 10;
 }
 
 .flex-grid .container {
@@ -26,48 +54,40 @@
   flex-grow: 1;
 }
 
-.flex-grid { 
-  margin: 0 0 20px 0;
-}
-.container {
-  /* border: 1px solid black; */
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
-@media screen and (max-width: 40.5em) {
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0px;
-  }
-}
-
-.post {
-  background-color: black;
-  /* border: 1px solid white; */
-}
-
-@media screen and (max-width: 40.5em) {
-  .post {
-  }
+.flex-row .col {
+  padding: 10 10 10 10;
 }
 
 .inner {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 40.5em) {
-  .inner {
-    width: auto;    
-  }
+.logos {
+  padding-top: 10px;
 }
 
+.nav-bar {
+  background-color: #455A53;
+  margin-bottom: 0px;
+}
 
-/* .fullHeight {
-  height: 100vh;
-} */
+.page-title {
+  text-align: center;
+}
+
+.post {
+  background-color: #181717;
+  /* border: 1px solid white; */
+}
+
+.post-text {
+  font-size: 18px;
+}
 
 .scrollContainer {
   overflow-y: scroll;
@@ -80,47 +100,29 @@
   height: 0;
 }
 
-.avatar {
-  vertical-align: middle;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-
-.logos {
-  padding-top: 10px;
-}
-
 .title-link {
   font-size: 18px;
 }
 
-.post-text {
-  font-size: 18px;
+@media screen and (max-width: 40.5em) {
+  .post {
+  }
 }
 
-.setup-section-link {
-  font-size: 20px;
+@media screen and (max-width: 40.5em) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px;
+  }
 }
 
-a {
-  text-decoration: none;
-  color: #7399be;
+@media screen and (max-width: 40.5em) {
+  .inner {
+    width: auto;    
+  }
 }
 
-p {
-  color: white;
-}
-
-h1, h2 {
-  color: white
-}
-
-body {
-  /* padding: 20px; */
-  margin: 0px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-color: black;
-}
+/* .fullHeight {
+  height: 100vh;
+} */
