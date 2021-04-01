@@ -150,3 +150,23 @@ body {
 /* .fullHeight {
   height: 100vh;
 } */
+
+.gradient {
+  height: 10px;
+  /* background: -webkit-linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);  Chrome 10-25, Safari 5.1-6 */
+  /* background: #C6FFDD;  /* fallback for old browsers */
+  background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+}
+
+.love {
+  color: #C6FFDD;
+}
+
+.meh {
+  color: #FBD786;
+}
+
+.skip {
+  color: #f7797d;
+}
+
