@@ -4,11 +4,19 @@ a {
 }
 
 p {
-  color: white;
+  color: #f5f5f5;
 }
 
 h1, h2 {
-  color: white
+  color: #f5f5f5
+}
+
+img {
+  color: #f5f5f5
+}
+
+.archive {
+  color: #BA5252
 }
 
 body {
@@ -85,6 +93,21 @@ body {
   /* border: 1px solid white; */
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 1ch;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
 .post-text {
   font-size: 18px;
 }
@@ -101,6 +124,7 @@ body {
 }
 
 .title-link {
+  margin: 1ch;
   font-size: 18px;
 }
 
