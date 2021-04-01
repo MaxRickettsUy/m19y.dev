@@ -19,6 +19,10 @@ img {
   color: #BA5252
 }
 
+.spacer {
+  flex-grow: 4;
+}
+
 body {
   /* padding: 20px; */
   margin: 0px;
@@ -43,6 +47,8 @@ body {
 
 .flex-grid {
   display: flex;
+  height: 75%;
+  margin-top: 10;
 }
 
 .flex-grid .container {
@@ -168,5 +174,9 @@ body {
 
 .skip {
   color: #f7797d;
+}
+
+.section-link-container {
+  width: 100%
 }
 
