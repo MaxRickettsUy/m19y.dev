@@ -24,7 +24,6 @@ img {
 }
 
 body {
-  /* padding: 20px; */
   margin: 0px;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -135,27 +134,24 @@ body {
 }
 
 @media screen and (max-width: 40.5em) {
-  .post {
-  }
-}
-
-@media screen and (max-width: 40.5em) {
   .container {
     width: 80%;
     margin: 0 auto;
     padding: 0px;
   }
-}
-
-@media screen and (max-width: 40.5em) {
+  .post-text {
+    font-size: 15px;
+  }
+  span {
+    font-size: 12px;
+  }
   .inner {
     width: auto;    
   }
+  .title-link {
+    font-size: 15px;
+  }
 }
-
-/* .fullHeight {
-  height: 100vh;
-} */
 
 .gradient {
   height: 10px;
