@@ -7,7 +7,7 @@ p {
   color: #f5f5f5;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #f5f5f5
 }
 
@@ -37,11 +37,25 @@ body {
   border: 1px solid black;
 }
 
+.centered-content {
+  text-align: center;
+}
+
 .container {
   /* border: 1px solid black; */
   width: 60%;
   margin: 0 auto;
   padding: 20px;
+}
+
+.disclaimer {
+  font-weight: bold;
+  color: #0DB07A;
+}
+
+.disclaimer-container {
+  margin: 0 auto;
+  width: 50%;
 }
 
 .flex-grid {
