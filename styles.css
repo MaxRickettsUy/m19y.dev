@@ -153,15 +153,27 @@ body {
     margin: 0 auto;
     padding: 0px;
   }
+
+  .disclaimer {
+    font-size: 12px;
+  }
+
+  .disclaimer-container {
+    width: 75%;
+  }
+
   .post-text {
     font-size: 15px;
   }
+
   span {
     font-size: 12px;
   }
+
   .inner {
     width: auto;    
   }
+
   .title-link {
     font-size: 15px;
   }
