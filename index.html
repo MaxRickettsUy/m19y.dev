@@ -2,65 +2,77 @@
   <head>
     <title>maxrickettsuy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <div class="flex-row nav-bar">
-      <div class="col avatar-col">
-        <a href="index.html"><img src="img/me.jpg" alt="avatar" class="avatar" /></a>
-      </div>
-      <div class="col">
-        <a href="index.html"><p>home</p></a>
-      </div>
-      <div class="col">
-        <a href="pages/projects.html"><p>projects</p></a>
-      </div>
-      <div class="col nav">
-        <a href="pages/2021.html"><p>2021</p></a>
-      </div>
-      <div class="spacer"></div>
-      <div class="col">
-        <div class="logos">
-          <a target="_blank" href="https://github.com/MaxRickettsUy">
-            <img width="40" height="40" alt="github logo link to account" src="img/github.png"/>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/max-ricketts-uy/">
-            <img width="40" height="40" alt="linkedin logo link to account" src="img/linkedin.png"/>
-          </a>
+    <div id="container">
+      <div class="siteHeader">
+        <div class="siteHeader__section">
+          <div class="col avatar-col">
+            <a href="index.html"><img src="img/me.jpg" alt="avatar" class="avatar" /></a>
+          </div>
+          <div class="siteHeader__item siteHeaderButton">
+            <a href="index.html"><p>home</p></a>
+          </div>
+          <div class="siteHeader__item siteHeaderButton">
+            <a href="pages/projects.html"><p>projects</p></a>
+          </div>
+          <div class="siteHeader__item siteHeaderButton">
+            <a href="pages/2021.html"><p>2021</p></a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="container col-lg fullHeight scrollContainer">
-      <div class="flex-grid">
-        <div class="container post">
-          <div class="inner">
-            <div class="page-title">
-              <h1>Hey, I'm Max.👋🏼</h1>
-            </div>
-            <p class="post-text">
-              I'm a <a target="_blank" href="https://interclypse.com/">software developer</a> and <a target="_blank" href="https://exerceo.org/">mentor</a>.
-            </p>
-            <p class="post-text">
-              This site is a mishmash of things including: 
-              a store of interesting works and resources I've found over the years, 
-              a list (and possible chronicle) of personal projects and what I've learned from them and more.
-            </p>
-            <p class="post-text">
-              Besides software I enjoy music (hardcore punk, black, metal, ...), gardening (mainly vegetables) and indoor bouldering among other things.
-              <br/><br/>
-            </p>
-            <h3 class="centered-content">
-              <a href="pages/setup.html">Check out my Setup</a>
-            </h3>
+        <div class="siteHeader__section">
+          <div class="logos">
+            <a target="_blank" href="https://github.com/MaxRickettsUy">
+              <img width="40" height="40" alt="github logo link to account" src="img/github.png"/>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/max-ricketts-uy/">
+              <img width="40" height="40" alt="linkedin logo link to account" src="img/linkedin.png"/>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="flex-row disclaimer-container">
-      <p class="disclaimer">
-        Disclaimer: All content on this site relates to personal opinions/
-        experiences and does not reflect my work, employer and/or colleagues.
-      </p>
+
+      <main>
+        <div class="flex-grid">
+          <div class="container post">
+            <div class="inner">
+              <div class="page-title">
+                <h1>Hey, I'm Max.👋🏼</h1>
+              </div>
+              <div>
+                <p class="post-text">
+                  I'm a <a target="_blank" href="https://interclypse.com/">software developer</a> and <a target="_blank" href="https://exerceo.org/">mentor</a>.
+                </p>
+                <p class="post-text">
+                  This site is a mishmash of things including:
+                  a store of interesting works and resources I've found over the years,
+                  a list (and possible chronicle) of personal projects and what I've learned from them and more.
+                </p>
+                <p class="post-text">
+                  Besides software I enjoy music (hardcore punk, black, metal, ...), gardening (mainly vegetables) and indoor bouldering among other things.
+                  <br/><br/>
+                </p>
+                <h3 class="centered-content">
+                  <a href="pages/setup.html">Check out my Setup</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="siteFooter">
+        <div class="siteFooter__section disclaimer-container">
+          <p class="disclaimer">
+            Disclaimer: All content on this site relates to personal opinions/
+            experiences and does not reflect my work, employer and/or colleagues.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
