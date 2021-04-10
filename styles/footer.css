@@ -1,4 +1,4 @@
-.siteHeader {
+.siteFooter {
   /**
     * Lay out the children of this container with
     * flexbox, which is horizontal by default.
@@ -13,10 +13,10 @@
   justify-content: space-between;
 
   padding: 10px;
-  background-color: #455A53;
+  background-color: #181717;
 }
 
-.siteHeader__section {
+.siteFooter__section {
   /**
     * Lay out the children of this container with
     * flexbox.
@@ -31,28 +31,28 @@
   align-items: center;
 }
 
-.siteHeader__item {
+.siteFooter__item {
   padding: 5px 15px;
   font-size: 12px;
 }
 
-.siteHeader__item + .siteHeader__item {
+.siteFooter__item + .siteFooter__item {
   margin-left: 5px;
 }
 
-.siteHeader__item.is-site-header-item-selected {
+.siteFooter__item.is-site-header-item-selected {
   color: #FFFFFF;
   background-color: #415F69;
   border-radius: 4px;
 }
 
-.siteHeaderLogo {
+.siteFooterLogo {
   font-size: 20px;
   line-height: 0;
   color: white;
 }
 
-.siteHeaderButton {
+.siteFooterButton {
   cursor: pointer;
   color: #D9E9EF;
 }

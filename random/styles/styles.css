@@ -3,11 +3,6 @@
     height: 100%; /* can also use viewport units (height: 100vh) */
   }
 
-  .nav {
-    margin-left: auto;
-    padding: 10px;
-  }
-
   #container {
     display: flex; /* displays flex-items (children) inline */
     flex-direction: column; /* stacks them vertically */
@@ -26,24 +21,8 @@
     background: lightgreen;
   }
 
-  .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f88;
-    padding: 10px;
-
-  }
-
-  .site-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   section:last-child {border: none}
 
   footer {
     background: lightblue;
-    padding: 10px;
   }
