@@ -1,11 +1,8 @@
 main {
   flex: 1;
   overflow-y: scroll;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   -ms-overflow-style: none;
-  /* overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none; */
 }
 
 main::-webkit-scrollbar {
