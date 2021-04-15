@@ -130,6 +130,7 @@
   .last-updated-container {
     width: 50%;
     margin: 0 auto;
+    text-align: center;
   }
 
   .last-updated {
@@ -138,6 +139,7 @@
 
   .disclaimer-container {
     /* width: 75%; */
+    text-align: justify;
   }
 
   .post-text {
