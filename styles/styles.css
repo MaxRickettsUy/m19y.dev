@@ -110,6 +110,11 @@
   font-size: 18px;
 }
 
+.last-updated-container {
+  width: 25%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 40.5em) {
   .container {
     width: 80%;
@@ -119,6 +124,15 @@
 
   .disclaimer {
     font-weight: bold;
+    font-size: 12px;
+  }
+
+  .last-updated-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .last-updated {
     font-size: 12px;
   }
 
