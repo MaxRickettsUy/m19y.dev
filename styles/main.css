@@ -5,10 +5,11 @@ main {
   -ms-overflow-style: none;
 }
 
-main::-webkit-scrollbar {
+/* hides scrollbar */
+/* main::-webkit-scrollbar {
   width: 0;
   height: 0;
-}
+} */
 
 
 html, body {
@@ -33,7 +34,7 @@ h1, h2, h3 {
 }
 
 img {
-  color: #f5f5f5
+  color: #f5f5f5;
 }
 
 section {
