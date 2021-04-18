@@ -33,7 +33,6 @@
 
 .siteHeader__item {
   padding: 5px 15px;
-  font-size: 12px;
 }
 
 .siteHeader__item + .siteHeader__item {
@@ -55,4 +54,12 @@
 .siteHeaderButton {
   cursor: pointer;
   color: #D9E9EF;
+}
+
+@media screen and (max-width: 40.5em) {
+
+  .siteHeader__item {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
 }
