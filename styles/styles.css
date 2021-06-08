@@ -8,10 +8,10 @@
 
 .avatar {
   vertical-align: middle;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 100%;
+  border: 1px solid white; */
 }
 
 .centered-content {
