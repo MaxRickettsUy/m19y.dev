@@ -56,6 +56,10 @@
   color: #D9E9EF;
 }
 
+.siteHeaderButton:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 40.5em) {
 
   .siteHeader__item {
