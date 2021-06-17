@@ -34,6 +34,10 @@
   color: #0DB07A;
 }
 
+.hamburger {
+  display: none;
+}
+
 .xps {
   height: auto;
   width: 100%

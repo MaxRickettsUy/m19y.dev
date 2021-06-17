@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/new.css">
     <script src="../scripts.js"></script>
     <style>
       li {
@@ -16,38 +17,30 @@
   </head>
   <body>
     <div id="container">
-
-      <div class="siteHeader">
-        <div class="siteHeader__section">
-          <div class="col avatar-col">
-            <a href="../index.html"><img src="../img/merle.png" alt="avatar" class="avatar" /></a>
+      <header class="header">
+        <nav class="navbar">
+          <a href="../index.html"><img src="../img/merle.png" alt="avatar" class="avatar" /></a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="docs.html" class="nav-link">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a href="rwl.html" class="nav-link">Read / Watch / Listen</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-          <div class="siteHeader__item siteHeaderButton">
-            <a href="../index.html"><p>home</p></a>
-          </div>
-          <div class="siteHeader__item siteHeaderButton">
-            <a href="projects.html"><p>projects</p></a>
-          </div>
-          <div class="siteHeader__item siteHeaderButton">
-            <a href="docs.html"><p>docs</p></a>
-          </div>
-          <div class="siteHeader__item siteHeaderButton">
-            <a id="rwl" href="rwl.html"><p>read / watch / listen</p></a>
-          </div>
-        </div>
-
-        <div class="siteHeader__section">
-          <div class="logos">
-            <a target="_blank" href="https://github.com/MaxRickettsUy">
-              <img width="30" height="30" alt="github logo link to account" src="../img/github.png"/>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/max-ricketts-uy/">
-              <img width="30" height="30" alt="linkedin logo link to account" src="../img/linkedin.png"/>
-            </a>
-          </div>
-        </div>
-      </div>
-
+        </nav>
+      </header>
       <main>
         <div class="flex-grid">
           <div class="container post">
