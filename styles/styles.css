@@ -56,6 +56,7 @@
 
 .flex-grid .container {
   flex: 1;
+  width: 100% !important;
 }
 
 .flex-row {
@@ -85,7 +86,7 @@
 }
 
 .post {
-  background-color: #181717;
+  /* background-color: #181717; */
   /* border: 1px solid white; */
 }
 
