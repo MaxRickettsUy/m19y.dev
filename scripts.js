@@ -10,6 +10,8 @@ const closeMenu = () => {
     navMenu.classList.remove("active");
 }
 
+const desiredRepo = "MaxRicketts-Uy";
+const dateTagClass = ".date";
 
 window.addEventListener('load', function () {
     hamburger = document.querySelector(".hamburger");
@@ -26,3 +28,26 @@ window.addEventListener('load', function () {
         //whatever
     }
 })
+
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function()
+{
+  if (this.readyState == 4 && this.status == 200)
+  {
+    let repos = JSON.parse(this.responseText);
+
+    repos.forEach((repo)=>{
+      if (repo.name == desiredRepo)
+      {
+        var lastUpdated = new Date(repo.updated_at);
+        var day = lastUpdated.getUTCDate();
+        var month = lastUpdated.getUTCMonth();
+        var year = lastUpdated.getUTCFullYear();
+        document.querySelector(dateTagClass).innerText = `Last updated: ${month}/${day}/${year}`;
+      }
+    });
+  }
+};
+xhttp.open("GET", "https://api.github.com/users/MaxRickettsUy/repos", true);
+xhttp.send();
