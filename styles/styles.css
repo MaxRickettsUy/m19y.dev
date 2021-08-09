@@ -23,6 +23,11 @@
   margin: 0 auto;
 }
 
+.merch-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
 #container {
   display: flex; /* displays flex-items (children) inline */
   flex-direction: column; /* stacks them vertically */
@@ -176,6 +181,10 @@
 
   .centered-div {
     width: 80%;
+  }
+
+  .merch-container {
+    width: 90%;
   }
 }
 

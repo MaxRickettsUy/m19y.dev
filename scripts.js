@@ -41,8 +41,10 @@ xhttp.onreadystatechange = function()
       if (repo.name == desiredRepo)
       {
         var lastUpdated = new Date(repo.updated_at);
-        var day = lastUpdated.getUTCDate();
-        var month = lastUpdated.getUTCMonth();
+        var day = lastUpdated.getUTCDate() - 1;
+
+        var month = lastUpdated.getUTCMonth() + 1;
+
         var year = lastUpdated.getUTCFullYear();
         document.querySelector(dateTagClass).innerText = `Last updated: ${month}/${day}/${year}`;
       }
