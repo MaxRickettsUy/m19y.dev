@@ -173,6 +173,10 @@
   .title-link {
     font-size: 15px;
   }
+
+  .centered-div {
+    width: 80%;
+  }
 }
 
 .gradient {
