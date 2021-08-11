@@ -37,6 +37,7 @@
 .disclaimer {
   /* font-weight: bold; */
   color: #0DB07A;
+  font-size: 12px;
 }
 
 .hamburger {
@@ -129,6 +130,12 @@
   font-size: 18px;
 }
 
+.last-updated {
+  font-size: 8px;
+  margin: 0 auto;
+  width: 50%;
+}
+
 .last-updated-container {
   width: 25%;
   margin: 0 auto;
@@ -143,7 +150,7 @@
 
   .disclaimer {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .last-updated-container {
@@ -153,7 +160,7 @@
   }
 
   .last-updated {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .disclaimer-container {
