@@ -18,6 +18,11 @@
   text-align: center;
 }
 
+ul#blogs li {
+  display: inline;
+}
+
+
 .centered-div {
   width: 50%;
   margin: 0 auto;
@@ -152,6 +157,11 @@
     font-weight: bold;
     font-size: 10px;
   }
+
+  ul#blogs li {
+    display: block;
+  }
+
 
   .last-updated-container {
     width: 50%;
