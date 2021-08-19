@@ -13,6 +13,55 @@ const closeMenu = () => {
 const desiredRepo = "MaxRicketts-Uy";
 const dateTagClass = ".date";
 
+const headers = ["Week", "Stocks", "Total Invested", "Dividends"];
+
+const generateDivHarvestingTable = () => {
+  const createElement = (element) => {
+    return document.createElement(element);
+  }
+
+  const divHarvestingDiv = document.getElementById("dividend-harvesting");
+  const table = createElement("table");
+  const headerRow = createElement("tr");
+  const tBody = createElement("tbody");
+
+
+  headers.forEach((h) => {
+    let header = createElement("th");
+    header.innerHTML = h;
+    headerRow.appendChild(header);
+  })
+
+  table.appendChild(headerRow);
+
+  data.forEach((d) => {
+    const weekRow = createElement("tr");
+    const weekCell = createElement("td");
+    const stockCell = createElement("td");
+    const investedCell = createElement("td");
+    const divCell = createElement("td");
+
+    const weekA = createElement("a");
+
+    weekCell.innerHTML = d.week;
+    stockCell.innerHTML = d.stocks;
+    investedCell.innerHTML = "$" + d.week * 100;
+    divCell.innerHTML = "";
+
+    weekRow.appendChild(weekCell);
+    weekRow.appendChild(stockCell);
+    weekRow.appendChild(investedCell);
+    weekRow.appendChild(divCell);
+
+    tBody.appendChild(weekRow);
+  })
+
+  table.appendChild(tBody);
+
+  divHarvestingDiv.appendChild(table);
+
+}
+
 window.addEventListener('load', function () {
     hamburger = document.querySelector(".hamburger");
     navMenu = document.querySelector(".nav-menu");
@@ -21,6 +70,8 @@ window.addEventListener('load', function () {
     hamburger.addEventListener("click", mobileMenu);
     navLink.forEach(n => n.addEventListener("click", closeMenu));
 
+    generateDivHarvestingTable();
+
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         // document.getElementById("rwl").innerHTML = "<p>rwl</p>";
 
@@ -28,7 +79,6 @@ window.addEventListener('load', function () {
         //whatever
     }
 })
-
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function()
