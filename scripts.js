@@ -1,3 +1,14 @@
+function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+    else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+}
+
 let hamburger, navMenu, navLink
 
 const mobileMenu = () => {
@@ -16,6 +27,7 @@ const dateTagClass = ".date";
 const headers = ["Week", "Stocks", "Total Invested", "Dividends"];
 
 const generateDivHarvestingTable = () => {
+
   const createElement = (element) => {
     return document.createElement(element);
   }
@@ -25,44 +37,58 @@ const generateDivHarvestingTable = () => {
   const headerRow = createElement("tr");
   const tBody = createElement("tbody");
 
+  if(table !== null && divHarvestingDiv !== null){
+    headers.forEach((h) => {
+      let header = createElement("th");
+      header.innerHTML = h;
+      headerRow.appendChild(header);
+    })
 
-  headers.forEach((h) => {
-    let header = createElement("th");
-    header.innerHTML = h;
-    headerRow.appendChild(header);
-  })
+    table.appendChild(headerRow);
 
-  table.appendChild(headerRow);
+    data.forEach((d) => {
+      const weekRow = createElement("tr");
+      const weekCell = createElement("td");
+      const stockCell = createElement("td");
+      const investedCell = createElement("td");
+      const divCell = createElement("td");
 
-  data.forEach((d) => {
-    const weekRow = createElement("tr");
-    const weekCell = createElement("td");
-    const stockCell = createElement("td");
-    const investedCell = createElement("td");
-    const divCell = createElement("td");
+      const weekA = createElement("a");
 
-    const weekA = createElement("a");
+      weekCell.innerHTML = d.week;
+      stockCell.innerHTML = d.stocks;
+      investedCell.innerHTML = "$" + d.week * 100;
+      divCell.innerHTML = "";
 
-    weekCell.innerHTML = d.week;
-    stockCell.innerHTML = d.stocks;
-    investedCell.innerHTML = "$" + d.week * 100;
-    divCell.innerHTML = "";
+      weekRow.appendChild(weekCell);
+      weekRow.appendChild(stockCell);
+      weekRow.appendChild(investedCell);
+      weekRow.appendChild(divCell);
 
-    weekRow.appendChild(weekCell);
-    weekRow.appendChild(stockCell);
-    weekRow.appendChild(investedCell);
-    weekRow.appendChild(divCell);
+      tBody.appendChild(weekRow);
+    })
 
-    tBody.appendChild(weekRow);
-  })
+    table.appendChild(tBody);
 
-  table.appendChild(tBody);
-
-  divHarvestingDiv.appendChild(table);
-
+    divHarvestingDiv.appendChild(table);
+  }
 }
 
 window.addEventListener('load', function () {
+  const toggleSwitch = document.querySelector('.theme-switch >  input');
+
+  toggleSwitch.addEventListener('change', switchTheme);
+
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'light') {
+        toggleSwitch.checked = true;
+    }
+  }
+
     hamburger = document.querySelector(".hamburger");
     navMenu = document.querySelector(".nav-menu");
     navLink = document.querySelectorAll(".nav-link");
@@ -71,13 +97,6 @@ window.addEventListener('load', function () {
     navLink.forEach(n => n.addEventListener("click", closeMenu));
 
     generateDivHarvestingTable();
-
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        // document.getElementById("rwl").innerHTML = "<p>rwl</p>";
-
-    } else {
-        //whatever
-    }
 })
 
 var xhttp = new XMLHttpRequest();

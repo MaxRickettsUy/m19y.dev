@@ -41,7 +41,7 @@ ul#blogs li {
 
 .disclaimer {
   /* font-weight: bold; */
-  color: #0DB07A;
+  color: #455A53;
   font-size: 12px;
 }
 
@@ -87,17 +87,12 @@ ul#blogs li {
 }
 
 .nav-bar {
-  background-color: #455A53;
+  /* background-color: #455A53; */
   margin-bottom: 0px;
 }
 
 .page-title {
   text-align: center;
-}
-
-.post {
-  background-color: #181717;
-  /* border: 1px solid white; */
 }
 
 .row {
@@ -139,6 +134,7 @@ ul#blogs li {
   font-size: 8px;
   margin: 0 auto;
   width: 50%;
+  color: var(--primary-color);
 }
 
 .last-updated-container {
@@ -167,10 +163,6 @@ ul#blogs li {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-  }
-
-  .last-updated {
-    font-size: 8px;
   }
 
   .disclaimer-container {

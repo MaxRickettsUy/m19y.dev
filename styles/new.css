@@ -38,7 +38,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: var(--bg-color);
 }
 
 .nav-menu {
@@ -48,11 +48,11 @@ a {
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 
 .nav-link{
-    color: #D9E9EF;
+    color: var(--primary-color);
     /* font-size: 1.6rem; */
     font-weight: 400;
     /* color: #475569; */
@@ -71,7 +71,7 @@ a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #181717;
+        background-color: var(--bg-color);
         width: 100%;
         /* border-radius: 10px; */
         text-align: center;
