@@ -52,7 +52,7 @@ a {
 }
 
 .nav-link{
-    color: var(--primary-color);
+    color: #f5f5f5;
     /* font-size: 1.6rem; */
     font-weight: 400;
     /* color: #475569; */
