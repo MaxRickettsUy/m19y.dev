@@ -15,10 +15,6 @@ li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
 .navbar {
     background-color: #455A53;
     display: flex;
