@@ -69,11 +69,8 @@ li {
         flex-direction: column;
         background-color: var(--bg-color);
         width: 100%;
-        /* border-radius: 10px; */
         text-align: center;
         transition: 0.3s;
-        /* box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05); */
     }
 
     .nav-menu.active {
@@ -83,6 +80,14 @@ li {
     .nav-item {
         margin: 1rem;
     }
+
+    .nav-link{
+        color: var(--primary-color);
+        /* font-size: 1.6rem; */
+        font-weight: 400;
+        /* color: #475569; */
+    }
+
 
     .hamburger {
         display: block;
