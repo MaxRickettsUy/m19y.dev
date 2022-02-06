@@ -1,0 +1,117 @@
+<!DOCTYPE html lang="en" class="no-js">
+  <head>
+    <title>posts</title>
+    <link rel="shortcut icon" type="image/jpg" href="../../img/merle.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Update a Wiki.js Heroku Deployment.">
+    <meta property="og:title" content="maxrickettsuy/posts">
+    <meta property="og:description" content="Upgrading a Wiki.js Heroku deployment.">
+    <meta property="og:image" content="img/merle.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.maxrickettsuy.com/pages/posts">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/new.css">
+    <link rel="stylesheet" href="../../styles/new-styles.css">
+    <script src="../../scripts.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header class="header">
+        <nav class="navbar">
+          <a href="../../index.html"><img src="../../img/avatar.png" alt="avatar" class="avatar" /></a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="../posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="../projects.html" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="../random.html" class="nav-link">Random</a>
+            </li>
+            <li class="nav-item">
+              <a href="../rwl.html" class="nav-link">Read / Watch / Listen</a>
+            </li>
+            <li class="nav-item">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+                </label>
+              </div>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="flex-grid">
+          <div class="container post">
+            <div class="inner">
+              <div class="page-title">
+                <h1>How to upgrade a Wiki Js Heroku deployment (to latest).</h1>
+                <p>2/5/2022</p>
+              </div>
+              <div class="centered-div">
+                <p class="post-text">
+                  I recently created a new wiki site and decided to go with <a href="https://js.wiki">Wiki Js</a>. What made this
+                  decision even easier was the option to <a href="https://docs.requarks.io/en/install/heroku">deploy to heroku</a>, which
+                  is falling out of fashion, but is what I'm familiar with. Today for the first time I noticed the new version alert in the admin section of my wiki.
+                </p>
+                <img src="https://res.cloudinary.com/shoveltoss-com/image/upload/v1644120277/m19y.dev/wiki-heroku-update-post-old-version_dyj0vx.png" />
+                <p class="post-text">
+                  Since there is no option to upgrade from the ui directly I would
+                  have to this manually.
+                </p>
+                <p class="post-text">
+                  There are no formal instruction in the Wiki Js docs. Fortunately the process is trivial (imo).
+                </p>
+                <p class="post-text">
+                  To upgrade Wiki Js:
+                </p>
+                <ol>
+                  <li>1. From the heroku cli: <code>heroku git:clone -a <app-name></code></li>
+                  <li>2. You should get an <a href="https://help.heroku.com/XOBUHLKQ/why-do-i-see-a-message-you-appear-to-have-cloned-an-empty-repository-when-using-heroku-git-clone">empty repository warning.</a> <code>cd</code> into cloned directory</li>
+                  <li>3. Add origin remote pointing to <code>https://github.com/requarks/wiki-heroku/tree/2.x.</code></li>
+                  <li>4. <code>git pull origin 2.x</code></li>
+                  <li>5. <code>git push heroku</code></li>
+                </ol>
+                <p class="post-text">
+                  After Heroku redeploys your wiki you should see the new version in the admin dashboard.
+                </p>
+                <img src="https://res.cloudinary.com/shoveltoss-com/image/upload/v1644120277/m19y.dev/wiki-heroku-update-post-new-version_izcdqp.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="siteFooter">
+        <div class="siteFooter__section disclaimer-container">
+          <div>
+            <p class="disclaimer">
+              Disclaimer: All content on this site relates to personal opinions/
+              experiences and does not reflect my work, employer and/or colleagues.
+            </p>
+            <div class="last-updated-container">
+              <p class="last-updated date" id="last-updated"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
