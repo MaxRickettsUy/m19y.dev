@@ -9,7 +9,45 @@ function switchTheme(e) {
     }
 }
 
-let hamburger, navMenu, navLink
+let hamburger, navMenu, navLink;
+
+const navBarTemplate = document.createElement('template');
+
+navBarTemplate.innerHTML = `
+  <nav class="navbar">
+    <a href="index.html"><img src="img/avatar.png" alt="avatar" class="avatar" /></a>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">/home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/pages/posts.html" class="nav-link">/posts</a>
+      </li>
+      <li class="nav-item">
+        <a href="/pages/projects.html" class="nav-link">/projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="/pages/random.html" class="nav-link">/random</a>
+      </li>
+      <li class="nav-item">
+        <a href="/pages/rwl.html" class="nav-link">/rwl</a>
+      </li>
+      <li class="nav-item">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+          </label>
+        </div>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+`;
 
 const mobileMenu = () => {
     hamburger.classList.toggle("active");
@@ -75,9 +113,15 @@ const generateDivHarvestingTable = () => {
 }
 
 window.addEventListener('load', function () {
+  const header = document.querySelector(".header")
+
+  header.appendChild(navBarTemplate.content)
+
   const toggleSwitch = document.querySelector('.theme-switch >  input');
 
-  toggleSwitch.addEventListener('change', switchTheme);
+  if(toggleSwitch) {
+    toggleSwitch.addEventListener('change', switchTheme);
+  }
 
   const currentTheme = localStorage.getItem('theme');
 
@@ -93,10 +137,14 @@ window.addEventListener('load', function () {
     navMenu = document.querySelector(".nav-menu");
     navLink = document.querySelectorAll(".nav-link");
 
-    hamburger.addEventListener("click", mobileMenu);
+    if(hamburger) {
+      hamburger.addEventListener("click", mobileMenu);
+    }
+
     navLink.forEach(n => n.addEventListener("click", closeMenu));
 
     generateDivHarvestingTable();
+
 })
 
 var xhttp = new XMLHttpRequest();
