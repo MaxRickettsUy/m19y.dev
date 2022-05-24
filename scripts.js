@@ -15,10 +15,10 @@ const navBarTemplate = document.createElement('template');
 
 navBarTemplate.innerHTML = `
   <nav class="navbar">
-    <a href="index.html"><img src="img/avatar.png" alt="avatar" class="avatar" /></a>
+    <a href="/index.html"><img src="/img/avatar.png" alt="avatar" class="avatar" /></a>
     <ul class="nav-menu">
       <li class="nav-item">
-        <a href="index.html" class="nav-link">/home</a>
+        <a href="/index.html" class="nav-link">/home</a>
       </li>
       <li class="nav-item">
         <a href="/pages/posts.html" class="nav-link">/posts</a>
